@@ -51,6 +51,20 @@ const sr = ScrollReveal({
 //     reset: true
 });
 
+/*===== ACCORDION DROPDOWNS FOR WORK SECTION =====*/
+const acc = document.querySelectorAll(".accordion");
+acc.forEach(button => {
+    button.addEventListener("click", function () {
+        this.classList.toggle("active");
+        const panel = this.nextElementSibling;
+        if (panel.style.display === "block") {
+            panel.style.display = "none";
+        } else {
+            panel.style.display = "block";
+        }
+    });
+});
+
 sr.reveal('.home__data, .about__img, .skills__subtitle, .skills__text',{}); 
 sr.reveal('.home__img, .about__subtitle, .about__text, .skills__img',{delay: 400}); 
 sr.reveal('.home__social-icon',{ interval: 200}); 
