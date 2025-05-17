@@ -292,6 +292,41 @@ img {
 }
 
 /* ===== WORK =====*/
+.accordion-container {
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.accordion {
+    background-color: #f0f0f0;
+    color: #111;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    text-align: left;
+    border: none;
+    outline: none;
+    font-size: 1.2rem;
+    transition: background-color 0.3s ease;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.accordion:hover {
+    background-color: #e0e0e0;
+}
+
+.panel {
+    padding: 0 18px;
+    background-color: white;
+    display: none;
+    overflow: hidden;
+    margin-bottom: 20px;
+    border-left: 3px solid #007BFF;
+    border-radius: 0 0 5px 5px;
+}
+
 .work__container {
   row-gap: 2rem;
 }
