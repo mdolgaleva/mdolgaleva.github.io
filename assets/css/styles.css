@@ -378,8 +378,8 @@ img {
 }
 
 .accordion__header .bx {
-  font-size: 2rem;
-  color: var(--second-color);
+  font-size: 1.5rem;
+  color: var(--first-color);
   transition: transform 0.5s ease;
 }
 
