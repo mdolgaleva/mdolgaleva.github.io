@@ -310,10 +310,8 @@ img {
   width: 100%;
 }
 
-/* Style the accordion panel. Note: hidden by default */
 .panel {
   font-family: var(--body-font);
-  font-weight: var(--font-semi);
   font-size: var(--normal-font-size);
   padding: 0.15rem 1rem; /*0 15px; */
   background-color: white;
@@ -321,9 +319,17 @@ img {
   box-sizing: border-box;
   display: none;
   overflow: hidden;
+  transition: 0.4s;
 }
 
-.accordion:focus {
+.work__icon {
+  font-size: 2rem;
+  margin-left: auto;
+  color: var(--first-color);
+  transition: 0.4s;
+}
+
+.accordion:active {
   background-color:var(--first-color);
 }
 
