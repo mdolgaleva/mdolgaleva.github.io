@@ -311,8 +311,14 @@ img {
 }
 
 /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
-.active, .accordion:hover {
+.accordion:hover {
   background-color: var(--first-color);
+}
+
+/* Apply background color when active */
+.accordion.active {
+  background-color: var(--first-color);
+  color: white;
 }
 
 /* Style the accordion panel. Note: hidden by default */
@@ -333,6 +339,7 @@ img {
 
 .active:after {
   content: "\2796"; /* Unicode character for "minus" sign (-) */
+  color: white;
 }
 
 /* ===== CONTACT =====*/
