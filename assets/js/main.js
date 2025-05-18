@@ -52,16 +52,12 @@ const sr = ScrollReveal({
 });
 
 /*===== ACCORDION DROPDOWNS FOR WORK SECTION =====*/
-var acc = document.getElementsByClassName("accordion");
+/*var acc = document.getElementsByClassName("accordion");
 var i;
 
 for (i = 0; i < acc.length; i++) {
   acc[i].addEventListener("click", function() {
-    /* Toggle between adding and removing the "active" class,
-    to highlight the button that controls the panel */
     this.classList.toggle("active");
-
-    /* Toggle between hiding and showing the active panel */
     var panel = this.nextElementSibling;
     if (panel.style.display === "block") {
       panel.style.display = "none";
@@ -69,7 +65,29 @@ for (i = 0; i < acc.length; i++) {
       panel.style.display = "block";
     }
   });
+}*/
+
+const accordionContent = document.getElementsByClassName("accordion__content"),
+      accordionHeader = document.querySelectorAll(".accordion__header");
+
+function toggleAccordion() {
+    let itemClass = this.parentNode.className;
+
+    // Close all panels
+    for (let i = 0; i < accordionContent.length; i++) {
+        accordionContent[i].className = "accordion__content accordion__close";
+    }
+
+    // Open the clicked one
+    if (itemClass === "accordion__content accordion__close") {
+        this.parentNode.className = "accordion__content accordion__open";
+    }
 }
+
+accordionHeader.forEach((el) => {
+    el.addEventListener("click", toggleAccordion);
+});
+
 
 sr.reveal('.home__data, .about__img, .skills__subtitle, .skills__text',{}); 
 sr.reveal('.home__img, .about__subtitle, .about__text, .skills__img',{delay: 400}); 
