@@ -52,24 +52,24 @@ const sr = ScrollReveal({
 });
 
 /*===== ACCORDION DROPDOWNS FOR WORK SECTION =====*/
-const workContent = document.getElementsByClassName("work__content"),
-    workHeader = document.querySelectorAll(".work__header");
+var acc = document.getElementsByClassName("accordion");
+var i;
 
-function toggleWork() {
-    let itemClass = this.parentNode.className;
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    /* Toggle between adding and removing the "active" class,
+    to highlight the button that controls the panel */
+    this.classList.toggle("active");
 
-    for (let i = 0; i < workContent.length; i++) {
-        workContent[i].className = "work__content work__close";
+    /* Toggle between hiding and showing the active panel */
+    var panel = this.nextElementSibling;
+    if (panel.style.display === "block") {
+      panel.style.display = "none";
+    } else {
+      panel.style.display = "block";
     }
-
-    if (itemClass === "work__content work__close") {
-        this.parentNode.className = "work__content work__open";
-    }
+  });
 }
-
-workHeader.forEach((el) => {
-    el.addEventListener("click", toggleWork);
-});
 
 sr.reveal('.home__data, .about__img, .skills__subtitle, .skills__text',{}); 
 sr.reveal('.home__img, .about__subtitle, .about__text, .skills__img',{delay: 400}); 
