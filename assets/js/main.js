@@ -52,18 +52,20 @@ const sr = ScrollReveal({
 });
 
 /*===== ACCORDION DROPDOWNS FOR WORK SECTION =====*/
-const acc = document.querySelectorAll(".accordion");
-acc.forEach(button => {
-    button.addEventListener("click", function () {
-        this.classList.toggle("active");
-        const panel = this.nextElementSibling;
-        if (panel.style.display === "block") {
-            panel.style.display = "none";
-        } else {
-            panel.style.display = "block";
-        }
-    });
-});
+const workContent = document.getElementsByClassName("work__content"),
+    workHeader = document.querySelectorAll(".work__header");
+
+function toggleWork() {
+    let itemClass = this.parentNode.className;
+
+    for (let i = 0; i < workContent.length; i++) {
+        workContent[i].className = "work__content work__close";
+    }
+
+    if (itemClass === "work__content work__close") {
+        this.parentNode.className = "work__content work__open";
+    }
+}
 
 sr.reveal('.home__data, .about__img, .skills__subtitle, .skills__text',{}); 
 sr.reveal('.home__img, .about__subtitle, .about__text, .skills__img',{delay: 400}); 
