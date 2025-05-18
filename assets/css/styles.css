@@ -375,6 +375,12 @@ img {
   transition: transform 0.5s ease;
 }
 
+.accordion__header .bx {
+  font-size: 2rem;
+  color: var(--first-color);
+  transition: transform 0.5s ease;
+}
+
 .accordion__content.accordion__open .bx {
   transform: rotate(45deg); /* Changes plus to minus */
   transition: transform 0.5s ease;
