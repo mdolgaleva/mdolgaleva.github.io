@@ -67,25 +67,28 @@ for (i = 0; i < acc.length; i++) {
   });
 }*/
 
-const accordionContent = document.getElementsByClassName("accordion__content"),
-      accordionHeader = document.querySelectorAll(".accordion__header");
+const accordionContent = document.querySelectorAll(".accordion__content");
+const accordionHeader = document.querySelectorAll(".accordion__header");
 
 function toggleAccordion() {
-    let itemClass = this.parentNode.className;
+  const parent = this.parentNode;
+  const isOpen = parent.classList.contains("accordion__open");
 
-    // Close all panels
-    for (let i = 0; i < accordionContent.length; i++) {
-        accordionContent[i].className = "accordion__content accordion__close";
-    }
+  // Close all
+  accordionContent.forEach((item) => {
+    item.classList.remove("accordion__open");
+    item.classList.add("accordion__close");
+  });
 
-    // Open the clicked one
-    if (itemClass === "accordion__content accordion__close") {
-        this.parentNode.className = "accordion__content accordion__open";
-    }
+  // Open the clicked one if it was closed
+  if (!isOpen) {
+    parent.classList.remove("accordion__close");
+    parent.classList.add("accordion__open");
+  }
 }
 
 accordionHeader.forEach((el) => {
-    el.addEventListener("click", toggleAccordion);
+  el.addEventListener("click", toggleAccordion);
 });
 
 
