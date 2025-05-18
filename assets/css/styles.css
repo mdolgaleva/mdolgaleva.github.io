@@ -310,20 +310,9 @@ img {
   width: 100%;
 }
 
-/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
-.accordion:hover:not(.active) {
-  background-color: white;
-}
-
-/* Apply background color when active */
-.accordion.active {
-  background-color: var(--first-color);
-  color: white;
-}
-
 /* Style the accordion panel. Note: hidden by default */
 .panel {
-  padding: 0 18px;
+  padding: 0 15px;
   background-color: white;
   display: none;
   overflow: hidden;
