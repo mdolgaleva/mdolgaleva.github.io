@@ -267,7 +267,7 @@ img {
   align-items: center;
   position: relative;
   font-weight: var(--font-semi);
-  padding: 0.4rem 1rem;
+  padding: 0.2rem 1rem;
   margin-bottom: 0.75rem; /* var(--mb-4); */
   border-radius: 0.5rem;
   box-shadow: 0px 4px 25px rgba(14, 36, 49, 0.15);
@@ -300,9 +300,9 @@ img {
   position: relative;
   font-family: var(--body-font);
   font-weight: var(--font-semi);
-  font-size: 1.1rem; /*var(--normal-font-size); */
+  font-size: 1.5rem; /*var(--normal-font-size); */
   color: var(--second-color);
-  padding: 0.5rem 1rem;
+  padding: 0.3rem 1rem;
   margin-bottom: 0.5rem; /*var(--mb-4); */
   border-radius: 0.5rem;
   box-shadow: 0px 4px 25px rgba(14, 36, 49, 0.15);
@@ -312,29 +312,29 @@ img {
 
 /* Style the accordion panel. Note: hidden by default */
 .panel {
-  padding: 0.5rem; /*0 15px; */
+  padding: 0.2rem; /*0 15px; */
   background-color: white;
+  width: 100%;
+  box-sizing: border-box;
   display: none;
   overflow: hidden;
 }
 
-.accordion-body {
-  padding: 0.5rem 0.75rem;
-  width: 100%;              /* ← This line makes the content span full width */
-  box-sizing: border-box;   /* ← This ensures padding is included in the 100% width */
+.accordion:hover {
+  background-color:var(--first-color);
 }
 
 .accordion:after {
   content: '\02795'; /* Unicode character for "plus" sign (+) */
   font-size: 13px;
-  color: white;
+  color: var(--first-color);
   float: right;
   margin-left: 5px;
 }
 
 .active:after {
   content: "\2796"; /* Unicode character for "minus" sign (-) */
-  color: white;
+  color: var(--first-color);
 }
 
 /* ===== CONTACT =====*/
