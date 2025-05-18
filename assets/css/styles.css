@@ -376,8 +376,8 @@ img {
 }
 
 .accordion__header .bx {
-  font-size: 2rem;
-  color: var(--first-color);
+  font-size: 3rem;
+  color: var(--second-color);
   transition: transform 0.5s ease;
 }
 
@@ -386,6 +386,9 @@ img {
   transition: transform 0.5s ease;
 }
 
+.accordion__content.accordion__close .bx {
+  transition: transform 0.5s ease;
+}
 
 /* ===== CONTACT =====*/
 .contact__input {
