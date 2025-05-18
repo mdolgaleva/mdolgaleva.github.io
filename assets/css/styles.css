@@ -475,7 +475,7 @@ img {
     text-align: initial;
   }
   .skills__container {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: 1fr;
     justify-content: center;
     column-gap: 2rem;
   }
