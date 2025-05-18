@@ -348,8 +348,14 @@ img {
 }
 
 .accordion__panel {
+  font-family: var(--body-font);
+  font-size: var(--normal-font-size);
+  width: 100%;
+  box-sizing: border-box;
+  display: none;
   max-height: 0;
   overflow: hidden;
+  padding: 0.5rem 1rem;
   transition: max-height 0.4s ease;
   padding: 0 1rem;
 }
@@ -363,13 +369,15 @@ img {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem;
+  padding: 0.5rem 1rem;
+  min-height: auto;
   background-color: #e6f0ff; /* light blueish background */
+  transition: transform 0.5s ease;
 }
 
 .accordion__content.accordion__open .bx {
   transform: rotate(45deg); /* Changes plus to minus */
-  transition: transform 0.3s ease;
+  transition: transform 0.5s ease;
 }
 
 
