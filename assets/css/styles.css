@@ -367,7 +367,7 @@ img {
 }
 
 .accordion__content.accordion__close {
-  margin-bottom: 0.2rem; /* Reduce spacing between items */
+  margin-bottom: 0; /* Reduce spacing between items */
 }
 
 .accordion__header {
@@ -375,14 +375,14 @@ img {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0.2rem 1rem;
+  padding: 0 1rem;
   min-height: auto;
   background-color: #e6f0ff; /* light blueish background */
   transition: transform 0.5s ease;
 }
 
 .accordion__header .bx {
-  font-size: 1rem;
+  font-size: 1.2rem;
   color: var(--second-color);
   transition: transform 0.5s ease;
 }
