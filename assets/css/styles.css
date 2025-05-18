@@ -366,6 +366,10 @@ img {
   max-height: 500px; /* Adjust based on your content */
 }
 
+.accordion__content.accordion__close {
+  margin-bottom: 0.2rem; /* Reduce spacing between items */
+}
+
 .accordion__header {
   cursor: pointer;
   display: flex;
@@ -379,7 +383,7 @@ img {
 
 .accordion__header .bx {
   font-size: 0.5rem;
-  color: var(--first-color);
+  color: var(--second-color);
   transition: transform 0.5s ease;
 }
 
