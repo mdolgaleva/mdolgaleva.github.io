@@ -292,130 +292,43 @@ img {
 }
 
 /* ===== WORK =====*/
-.work__container {
-  row-gap: 0;
-}
-
-.work__header {
-  display: flex;
-  align-items: center;
-  margin-bottom: var(--mb-2-5);
+/* Style the buttons that are used to open and close the accordion panel */
+.accordion {
+  background-color: #eee;
+  color: #444;
   cursor: pointer;
-}
-
-.work__icon,
-.work__arrow {
-  font-size: 2rem;
-  color: var(--first-color);
-}
-
-.work__icon {
-  margin-right: var(--mb-0-75);
-}
-
-.work__title {
-  font-size: var(--h3-font-size);
-}
-
-.work__subtitle {
-  font-size: var(--small-font-size);
-  color: var(--text-color-light);
-}
-
-.work__arrow {
-  margin-left: auto;
+  padding: 18px;
+  width: 100%;
+  text-align: left;
+  border: none;
+  outline: none;
   transition: 0.4s;
 }
 
-.work__list {
-  row-gap: 1.5rem;
-  padding-left: 2.7rem;
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active, .accordion:hover {
+  background-color: #ccc;
 }
 
-.work__titles {
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: var(--mb-0-5);
-}
-
-.work__name {
-  font-size: var(--normal-font-size);
-  font-weight: var(--font-medium);
-}
-
-.work__bar,
-.work__percentage {
-  height: 5px;
-  border-radius: 0.25rem;
-}
-
-.work__bar {
-  background-color: var(--first-color-lighter);
-}
-
-.work__percentage {
-  display: block;
-  background-color: var(--first-color);
-}
-
-.work__html {
-  width: 90%;
-}
-
-.work__css {
-  width: 80%;
-}
-
-.work__js {
-  width: 70%;
-}
-
-.work__react {
-  width: 85%;
-}
-
-.work__php {
-  width: 90%;
-}
-
-.work__node {
-  width: 70%;
-}
-
-.work__firebase {
-  width: 60%;
-}
-
-.work__python {
-  width: 65%;
-}
-
-.work__figma {
-  width: 60%;
-}
-
-.work__sketch {
-  width: 70%;
-}
-
-.work__photoshop {
-  width: 80%;
-}
-
-.work__close .work__list {
-  height: 0;
+/* Style the accordion panel. Note: hidden by default */
+.panel {
+  padding: 0 18px;
+  background-color: white;
+  display: none;
   overflow: hidden;
 }
 
-.work__open .work__list {
-  height: max-content;
-  margin-bottom: var(--mb-2-5);
+.accordion:after {
+  content: '\02795'; /* Unicode character for "plus" sign (+) */
+  font-size: 13px;
+  color: #777;
+  float: right;
+  margin-left: 5px;
 }
 
-.work__open .work__arrow {
-  transform: rotate(-180deg);
+.active:after {
+  content: "\2796"; /* Unicode character for "minus" sign (-) */
 }
-
 
 /* ===== CONTACT =====*/
 .contact__input {
