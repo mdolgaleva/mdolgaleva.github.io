@@ -298,6 +298,7 @@ img {
   justify-content: space-between;
   align-items: center;
   position: relative;
+  font-size: var(--h3-font-size);
   font-weight: var(--font-semi);
   padding: 0.5rem 1rem;
   margin-bottom: var(--mb-4);
