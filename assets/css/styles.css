@@ -378,7 +378,7 @@ img {
 }
 
 .accordion__header .bx {
-  font-size: 3rem;
+  font-size: 2rem;
   color: var(--second-color);
   transition: transform 0.5s ease;
 }
