@@ -352,7 +352,7 @@ img {
   font-size: var(--normal-font-size);
   width: 100%;
   box-sizing: border-box;
-  display: none;
+  display: block;
   max-height: 0;
   overflow: hidden;
   padding: 0.5rem 1rem;
