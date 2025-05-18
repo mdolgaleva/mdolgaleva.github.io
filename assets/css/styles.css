@@ -363,7 +363,7 @@ img {
 }
 
 .accordion__content.accordion__open .accordion__panel {
-  max-height: 30px; /* Adjust based on your content */
+  max-height: 200px; /* Adjust based on your content */
 }
 
 .accordion__content.accordion__close {
@@ -382,7 +382,7 @@ img {
 }
 
 .accordion__header .bx {
-  font-size: 0.5rem;
+  font-size: 1rem;
   color: var(--second-color);
   transition: transform 0.5s ease;
 }
