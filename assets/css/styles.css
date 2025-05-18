@@ -477,11 +477,11 @@ img {
   .skills__container {
     grid-template-columns: repeat(2, 1fr);
     justify-content: center;
-    column-gap: 1rem;
-  }
-  .work__container {
-    grid-template-columns: repeat(2, 1fr);
     column-gap: 2rem;
+  }
+  .services__container {
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 1rem;
     padding-top: 2rem;
   }
   .contact__form {
