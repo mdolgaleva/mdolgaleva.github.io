@@ -311,6 +311,7 @@ img {
 }
 
 .panel {
+  max-height: 0;
   font-family: var(--body-font);
   font-size: var(--normal-font-size);
   padding: 0.15rem 1rem; /*0 15px; */
@@ -319,7 +320,7 @@ img {
   box-sizing: border-box;
   display: none;
   overflow: hidden;
-  transition: 0.4s;
+  transition: max-height 0.4s ease;
 }
 
 .work__icon {
