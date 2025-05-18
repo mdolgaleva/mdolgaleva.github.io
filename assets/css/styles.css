@@ -347,6 +347,32 @@ img {
   color: var(--first-color);
 }
 
+.accordion__panel {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s ease;
+  padding: 0 1rem;
+}
+
+.accordion__content.accordion__open .accordion__panel {
+  max-height: 500px; /* Adjust based on your content */
+}
+
+.accordion__header {
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  background-color: #e6f0ff; /* light blueish background */
+}
+
+.accordion__content.accordion__open .bx {
+  transform: rotate(45deg); /* Changes plus to minus */
+  transition: transform 0.3s ease;
+}
+
+
 /* ===== CONTACT =====*/
 .contact__input {
   width: 100%;
