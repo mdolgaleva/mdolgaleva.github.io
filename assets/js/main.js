@@ -99,7 +99,7 @@ sr.reveal('.skills__data, .work__img, .skills__container, .contact__input',{inte
 sr.reveal('.accordion__content', { interval: 200 }); 
 
 /*==================== FORMSPREE CONTACT FORM ====================*/
-const form = document.querySelector('.contact__form');
+/*const form = document.querySelector('.contact__form');
 const status = document.getElementById('form-status');
 
 form.addEventListener('submit', async (e) => {
@@ -132,4 +132,4 @@ form.addEventListener('submit', async (e) => {
         status.textContent = "Oops! There was a network error. Please try again.";
         status.style.color = "red";
     }
-});
+});*/
