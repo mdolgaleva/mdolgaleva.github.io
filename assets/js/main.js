@@ -97,3 +97,39 @@ sr.reveal('.home__img, .about__subtitle, .about__text, .skills__img',{delay: 400
 sr.reveal('.home__social-icon',{ interval: 200}); 
 sr.reveal('.skills__data, .work__img, .skills__container, .contact__input',{interval: 200}); 
 sr.reveal('.accordion__content', { interval: 200 }); 
+
+/*==================== FORMSPREE CONTACT FORM ====================*/
+const form = document.querySelector('.contact__form');
+const status = document.getElementById('form-status');
+
+form.addEventListener('submit', async (e) => {
+    e.preventDefault();
+    const data = new FormData(form);
+
+    try {
+        const response = await fetch(form.action, {
+            method: form.method,
+            body: data,
+            headers: {
+                'Accept': 'application/json'
+            }
+        });
+
+        if (response.ok) {
+            status.textContent = "Thanks for your message!";
+            status.style.color = "green";
+            form.reset();
+        } else {
+            const result = await response.json();
+            if (result.errors) {
+                status.textContent = result.errors.map(error => error.message).join(", ");
+            } else {
+                status.textContent = "Oops! There was a problem submitting your form.";
+            }
+            status.style.color = "red";
+        }
+    } catch (error) {
+        status.textContent = "Oops! There was a network error. Please try again.";
+        status.style.color = "red";
+    }
+});
