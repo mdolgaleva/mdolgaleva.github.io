@@ -272,7 +272,7 @@ img {
   padding: 0.2rem 1rem;
   margin-bottom: 0.75rem; /* var(--mb-4); */
   border-radius: 0.5rem;
-  box-shadow: 0px 4px 25px rgba(14, 36, 49, 0.15);
+  /*box-shadow: 0px 4px 25px rgba(14, 36, 49, 0.15);*/
 }
 .skills__icon {
   font-size: 2rem;
