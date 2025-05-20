@@ -380,12 +380,16 @@ img {
   padding: 0 1rem;
   min-height: auto;
   background-color: #e6f0ff; /* light blueish background */
+  border-radius: 0.5rem;
+  box-shadow: 0px 4px 25px rgba(14, 36, 49, 0.15);
   transition: transform 0.5s ease;
 }
 
 .accordion__header .bx {
   font-size: 1.1rem;
   color: var(--second-color);
+  border-radius: 0.5rem;
+  box-shadow: 0px 4px 25px rgba(14, 36, 49, 0.15);
   transition: transform 0.5s ease;
 }
 
