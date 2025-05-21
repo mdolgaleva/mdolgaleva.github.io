@@ -154,7 +154,7 @@ img {
   background-color: var(--first-color);
 }
 .nav__logo {
-  font-size: --h2-font-size;
+  font-size: --big-font-size;
   color: var(--second-color);
 }
 .nav__toggle {
@@ -194,9 +194,8 @@ img {
 }
 
 .lang-option {
-  padding: 0.2rem 0.4rem;
-  font-size: --normal-font-size;
-  /*font-weight: bold;*/
+  padding: 0.15rem 0.3rem;
+  font-size: --smaller-font-size;
   cursor: pointer;
   background-color: white;
   color: black;
