@@ -178,6 +178,35 @@ img {
   right: 0;
 }
 
+/*==== Language setup =====*/
+.language-toggle {
+  position: fixed;
+  top: 1rem;
+  right: 1rem;
+  display: flex;
+  border: 2px solid var(--second-color);
+  border-radius: 0.5rem;
+  overflow: hidden;
+  z-index: 1000;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.lang-option {
+  padding: 0.4rem 0.8rem;
+  font-weight: bold;
+  cursor: pointer;
+  background-color: white;
+  color: var(--first-color);
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.lang-option.selected {
+  background-color: var(--first-color);
+  color: white;
+}
+/*=================*/
+
+
 /*===== HOME =====*/
 .home {
   position: relative;
