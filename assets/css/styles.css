@@ -154,6 +154,7 @@ img {
   background-color: var(--first-color);
 }
 .nav__logo {
+  font-size: --h2-font-size;
   color: var(--second-color);
 }
 .nav__toggle {
