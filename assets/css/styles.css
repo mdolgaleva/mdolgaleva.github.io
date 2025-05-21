@@ -182,10 +182,10 @@ img {
 .language-toggle {
   position: fixed;
   top: 1rem;
-  right: 2rem;
+  right: 3rem;
   display: flex;
   gap: 0;
-  border: 2px solid var(--second-color);
+  border: 1px solid var(--second-color);
   border-radius: 0.5rem;
   overflow: hidden;
   z-index: 1000;
@@ -193,8 +193,9 @@ img {
 }
 
 .lang-option {
-  padding: 0.4rem 0.8rem;
-  font-weight: bold;
+  padding: 0.4rem 0.4rem;
+  font-size: --normal-font-size;
+  /*font-weight: bold;*/
   cursor: pointer;
   background-color: white;
   color: black;
