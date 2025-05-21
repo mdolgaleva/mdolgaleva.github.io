@@ -182,13 +182,14 @@ img {
 .language-toggle {
   position: fixed;
   top: 1rem;
-  right: 1rem;
+  right: 2rem;
   display: flex;
+  gap: 0;
   border: 2px solid var(--second-color);
   border-radius: 0.5rem;
   overflow: hidden;
   z-index: 1000;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  /*box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);*/
 }
 
 .lang-option {
@@ -196,13 +197,13 @@ img {
   font-weight: bold;
   cursor: pointer;
   background-color: white;
-  color: var(--first-color);
+  color: black;
   transition: background-color 0.3s, color 0.3s;
 }
 
 .lang-option.selected {
   background-color: var(--first-color);
-  color: white;
+  color: black;
 }
 /*=================*/
 
